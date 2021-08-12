@@ -1,0 +1,26 @@
+import time
+#title: Te Reo Quiz
+#date created 09/07/21
+#Auther Ryan Clarke
+
+#title: welcome name
+#date created 09/07/21
+#auther Ryan Clarke
+#purpose to ask the user for their name and stores it as a variable then greets the user using the name they give
+#vesion 1
+print("what is your name?")
+print("")
+name = input()
+print("")
+print("hello "+ name + " and welcome to this Te Reo quiz")
+time.sleep (1)
+
+#title:played before
+#date created: 09/07/21
+#auther: Ryan Clarke
+#purpose: to ask teh user if they have played the game before and then stores the answer as a variable.then the code checks if the user has used a valid answer and gives a response based on the users input
+print  ("have you played before?")
+print("")
+played_before = input().lower()
+
+if played_before == "yes" or played_before == "y":
