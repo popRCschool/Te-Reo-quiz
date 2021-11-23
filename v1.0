@@ -1,26 +1,278 @@
 import time
-#title: Te Reo Quiz
-#date created 09/07/21
-#Auther Ryan Clarke
 
-#title: welcome name
-#date created 09/07/21
-#auther Ryan Clarke
-#purpose to ask the user for their name and stores it as a variable then greets the user using the name they give
-#vesion 1
-print("what is your name?")
-print("")
+
+#easy question Start. this function tells the user that they are going to do five easy questions and then calls apon the first question.this was coded on 21/9/21 by Ryan Clarke.v1
+def easy_Questions():
+    print("first five easy questions")
+    question_one()
+
+
+#question one. this is the first question it asks the user a true or false questuon if you choose the correct answer the code tells the user they are correct but if they answer wrong the code tells the user the chose the wrong answer either way the code goes to the next question.this was coded on 21/9/21 by Ryan Clarke.v1
+def question_one():
+    print("Question one: true or false the maaori word for red is whero")
+    answer = input().lower()
+    if answer == "true" or answer == "yes" or answer == "y":
+        print("Correct")
+        Question_two()
+
+    else:
+        print("incorrect")
+        Question_two()
+
+
+#question two. this is the second question it asks the user a true or false questuon if you choose the correct answer the code tells the user they are correct but if they answer wrong the code tells the user the chose the wrong answer either way the code goes to the next question.this was coded on 21/9/21 by Ryan Clarke.v1
+def Question_two():
+    print("question two: true or false the maaori word for orange is karaka")
+    answer = input().lower()
+    if answer == "true" or answer == "yes" or answer == "y":
+        print("correct")
+        Question_three()
+    else:
+        print("incorrect")
+        Question_three()
+
+
+#question three. this is the third question it asks the user a true or false questuon if you choose the correct answer the code tells the user they are correct but if they answer wrong the code tells the user the chose the wrong answer either way the code goes to the next question.this was coded on 21/9/21 by Ryan Clarke.v1
+def Question_three():
+    print(
+        "question three : true or false the maaori word for blue is kakariki")
+    answer = input().lower()
+    if answer == "false" or answer == "no" or answer == "n":
+        print("correct")
+        Question_four()
+    else:
+      print("incorrect")
+      Question_four()
+
+
+#question four. this is the fourth question it asks the user to choose a asnwer a, b or c if they choose the right answer they code tell the user they are correct and moves on if the user chooses wrong the code stills moves on the tells the user they were wrong instead either way the code moves on to the next question.this was coded on 21/9/21 by Ryan Clarke.v1
+def Question_four():
+    print("question four: which of the folloing is the maori word for green")
+    print("A.kowhai")
+    print("b.kakariki")
+    print("c.kikirangi")
+    answer = input().lower()
+    if answer == "b":
+        print("Correct")
+        Question_five()
+    else:
+        print("incorrect")
+        Question_five()
+
+
+#question five. this is the fifth question it asks the user to choose a asnwer a, b or c if they choose the right answer they code tell the user they are correct and moves on if the user chooses wrong the code stills moves on the tells the user they were wrong instead either way the code moves on to the next question.this was coded on 21/9/21 by Ryan Clarke.v1
+def Question_five():
+    print("question five: which of the folloing is the maori word for white")
+    print("A.ma")
+    print("b.kikirangi")
+    print("c.waiporoporo")
+    answer = input().lower()
+    if answer == "a":
+        print("correct")
+        print("congratulations you have beat the five easy questions")
+        medium_questions()
+
+    else:
+        print("incorrect")
+        print("congratulations you have beat the five easy questions")
+        medium_questions()
+
+
+#medium question Start. this function tells the user that they are going to do five mediuam questions and then calls apon the sixth question.this was coded on 23/9/21 by Ryan Clarke.v2
+def medium_questions():
+    print("now five medium questions")
+    Question_six()
+
+
+#question six. this is the sixth question it asks the user to choose a asnwer a, b or c if they choose the right answer they code tell the user they are correct and moves on if the user chooses wrong the code stills moves on the tells the user they were wrong instead either way the code moves on to the next question.this was coded on 23/9/21 by Ryan Clarke.v2
+def Question_six():
+    print("question six: which of the following is maori word for new zealand")
+    print("a.Ahuriri ")
+    print("b.Akaroa ")
+    print("c.aotearoa")
+    answer = input().lower()
+    if answer == "c":
+        print("Correct")
+        Question_seven()
+    else:
+        print("incorrect")
+        Question_seven()
+
+
+#question seven. this is the seventh question it asks the user to choose a asnwer a, b or c if they choose the right answer they code tell the user they are correct and moves on if the user chooses wrong the code stills moves on the tells the user they were wrong instead either way the code moves on to the next question.this was coded on 23/9/21 by Ryan Clarke.v2
+def Question_seven():
+    print("question seven: which of the following is maori word for hamilton")
+    print("a.Awakairangi ")
+    print("b.kirikiriroa")
+    print("c.Murihiku ")
+    answer = input().lower()
+    if answer == "b":
+        print("Correct")
+        Question_eight()
+    else:
+        print("incorrect")
+        Question_eight()
+
+
+#question eight. this is the eighth question it asks the user to choose a asnwer a, b or c if they choose the right answer they code tell the user they are correct and moves on if the user chooses wrong the code stills moves on the tells the user they were wrong instead either way the code moves on to the next question.this was coded on 23/9/21 by Ryan Clarke.v2
+def Question_eight():
+    print(
+        "question eight: which of the following is maori word for chirstchurch"
+    )
+    print("a.Ōtautahi")
+    print("b.Hakatere ")
+    print("c.Ōtepoti ")
+    answer = input().lower()
+    if answer == "a":
+        print("Correct")
+        Question_nine()
+    else:
+        print("incorrect")
+        Question_nine()
+
+
+#question nine. this is the ninth question it asks the user to choose a asnwer a, b or c if they choose the right answer they code tell the user they are correct and moves on if the user chooses wrong the code stills moves on the tells the user they were wrong instead either way the code moves on to the next question.this was coded on 23/9/21 by Ryan Clarke.v2
+def Question_nine():
+    print("question nine: which of the following is maori word for auckland")
+    print("a.Tāmaki Makaurau")
+    print("b.Waihopai ")
+    print("c.Kaiwaewae ")
+    answer = input().lower()
+    if answer == "a":
+        print("Correct")
+        Question_ten()
+    else:
+        print("incorrect")
+        Question_ten()
+
+
+#question ten. this is the tenth question it asks the user to choose a asnwer a, b or c if they choose the right answer they code tell the user they are correct and moves on if the user chooses wrong the code stills moves on the tells the user they were wrong instead either way the code moves on to the next question.this was coded on 23/9/21 by Ryan Clarke.v2
+def Question_ten():
+    print(
+        "question ten: which of the following is maori word for Taupō(realy hard only 3% can beat this question)"
+    )
+    print("a.Hauraki ")
+    print("b.Awakairangi ")
+    print("c.Taupō-nui-a-Tia")
+    answer = input().lower()
+    if answer == "c":
+        print("Correct")
+        Question_eleven()
+    else:
+        print("incorrect")
+        Question_eleven()
+
+
+#hard question Start. this function tells the user that they are going to do five hard questions and then calls apon the eleventh question.this was coded on 24/9/21 by Ryan Clarke.v3
+def hard_questions():
+    print("now five hard questions")
+    Question_eleven
+
+
+#question eleven. this is the eleventh question it asks the user to choose a asnwer a, b or c if they choose the right answer they code tell the user they are correct and moves on if the user chooses wrong the code stills moves on the tells the user they were wrong instead either way the code moves on to the next question.this was coded on 24/9/21 by Ryan Clarke.v3
+def Question_eleven():
+    print("question eleven: which of the following is maori word for table")
+    print("a.tuuru")
+    print("b.teepu")
+    print("c.pukapuka")
+    answer = input().lower()
+    if answer == "b":
+        print("Correct")
+        Question_twelve()
+    else:
+        print("incorrect")
+        Question_twelve()
+
+
+#question twelve. this is the twelfth question it asks the user to choose a asnwer a, b or c if they choose the right answer they code tell the user they are correct and moves on if the user chooses wrong the code stills moves on the tells the user they were wrong instead either way the code moves on to the next question.this was coded on 24/9/21 by Ryan Clarke.v3
+def Question_twelve():
+    print("question ten: which of the following is maori word for Ruler")
+    print("a.ruri")
+    print("b.pukapuka")
+    print("c.tuuru")
+    answer = input().lower()
+    if answer == "a":
+        print("Correct")
+        Question_thirteen()
+    else:
+        print("incorrect")
+        Question_thirteen()
+
+
+#question thirteen. this is the thirteenth question it asks the user to choose a asnwer a, b or c if they choose the right answer they code tell the user they are correct and moves on if the user chooses wrong the code stills moves on the tells the user they were wrong instead either way the code moves on to the next question.this was coded on 24/9/21 by Ryan Clarke.v3
+def Question_thirteen():
+    print("question ten: which of the following is maori word for computer")
+    print("a.tuuru")
+    print("b.ūkui")
+    print("c.rorohiko")
+    answer = input().lower()
+    if answer == "c":
+        print("Correct")
+        Question_fourteen()
+    else:
+        print("incorrect")
+        Question_fourteen()
+
+
+#question fourteen. this is the fourteenth question it asks the user to choose a asnwer a, b or c if they choose the right answer they code tell the user they are correct and moves on if the user chooses wrong the code stills moves on the tells the user they were wrong instead either way the code moves on to the next question.this was coded on 24/9/21 by Ryan Clarke.v3
+def Question_fourteen():
+    print("question ten: which of the following is maori word for book")
+    print("a.pene")
+    print("b.pepa")
+    print("c.pukapuka")
+    answer = input().lower()
+    if answer == "c":
+        print("Correct")
+        Question_fifteen()
+    else:
+        print("incorrect")
+        Question_fifteen()
+
+
+#question fifteen. this is the fifteenth question it asks the user to choose a asnwer a, b or c if they choose the right answer they code tell the user they are correct and moves on if the user chooses wrong the code stills moves on the tells the user they were wrong instead either way the code moves on to the next question.this was coded on 24/9/21 by Ryan Clarke.v3
+def Question_fifteen():
+    print("question ten: which of the following is maori word for chair")
+    print("a.ūkui")
+    print("b.pepa")
+    print("c.tuuru")
+    answer = input().lower()
+    if answer == "c":
+        print("Correct")
+        win()
+    else:
+        print("incorrect")
+        win()
+
+
+#Win.this is the code that is run when the user finishes the quiz it congratulates the veiwer before the code ends.this was coded on 24/9/21 by Ryan Clarke.v3
+def win():
+    print(
+        "congratulations you have beat the te reo quiz. you got redacted out of fifteen correct good job"
+    )
+
+
+#played before. this codes asks the user if they have played before and gives a result based on their answer.this was coded on 21/9/21 by Ryan Clarke.v1
+def played_before():
+    print("have you played before?")
+    played_before = input().lower()
+    if played_before == "yes" or played_before == "y":
+        easy_Questions()
+    else:
+        rules()
+
+
+
+#rules.this is the rules function if the user says they havent played before this code is ran so that they can learn how to play.this was coded on 21.9.21 by Ryan Clarke.v1
+def rules():
+    print(
+        "to play this quiz you must answer the questions. If it is a true or false question asnwer with true or false depending on which you believe to be correct if it is a multi choice question choose a, b, or c depending on what you think is correct"
+    )
+    time.sleep(6)
+    easy_Questions()
+
+
+#welcome.this is the welcome funtion it ask the user for their name then greets them with the given name before moving on to the next code.coded by Ryan Clarke on 21/9/21.v1
+print("hello what is your name")
 name = input()
-print("")
-print("hello "+ name + " and welcome to this Te Reo quiz")
-time.sleep (1)
-
-#title:played before
-#date created: 09/07/21
-#auther: Ryan Clarke
-#purpose: to ask teh user if they have played the game before and then stores the answer as a variable.then the code checks if the user has used a valid answer and gives a response based on the users input
-print  ("have you played before?")
-print("")
-played_before = input().lower()
-
-if played_before == "yes" or played_before == "y":
+print("kia ora " + name + " and welcome to this te reo quiz")
+played_before()
